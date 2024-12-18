@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-slide {
+  @apply absolute inset-0 transition-all duration-1000 ease-in-out;
+}
+
+.hero-slide-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.hero-slide-enter-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-slide-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-slide-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+}
